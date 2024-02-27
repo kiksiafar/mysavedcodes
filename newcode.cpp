@@ -12,7 +12,7 @@ struct vec3 {
     vec3  operator*(const float v) const { return {x*v, y*v, z*v};       }
     float operator*(const vec3& v) const { return x*v.x + y*v.y + z*v.z; }
     vec3  operator+(const vec3& v) const { return {x+v.x, y+v.y, z+v.z}; }
-    vec3  operator-(const vec3& v) const { return {x-v.x, y-v.y, z-v.z}; }
+    vec3  operator-(const vec3& v) const { return {x-v.x, y-v.y, z-v.z}; }//that yes
     vec3  operator-()              const { return {-x, -y, -z};          }
     float norm() const { return std::sqrt(x*x+y*y+z*z); }
     vec3 normalized() const { return (*this)*(1.f/norm()); }
