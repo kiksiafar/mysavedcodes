@@ -4,7 +4,7 @@ struct Material {
     vec3 diffuse_color = {0,0,0};
     float specular_exponent = 0;
 };
-
+//good one bob
 struct vec3 {
     float x=0, y=0, z=0;
           float& operator[](const int i)       { return i==0 ? x : (1==i ? y : z); }
