@@ -24,3 +24,4 @@ for (const Sphere &s : spheres) {
         pt = orig + dir*nearest_dist;
         N = (pt - s.center).normalized();
         material = s.material;
+//helllo yes
